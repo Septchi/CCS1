@@ -1,0 +1,22 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #e1e8e3;
+}
+
+ul{
+	width: 100%;
+	margin: 0 0 0 250px;
+	list-style: none;
+}
+li{
+	float:right;
+}
+li a{
+	width: 100px;
+	display: block;
+	padding: 20px 15px;
+	text-decoration: none;
+	color: white;
+	text-align:center;
+}
