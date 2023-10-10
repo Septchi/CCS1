@@ -1,22 +1,60 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: #e1e8e3;
+	background-color:powderblue;
 }
 
-ul{
-	width: 100%;
-	margin: 0 0 0 250px;
+div{
+	width:100%;
+}
+ .logo {
+       margin-right: 10%;
+       /* margin-top: 10px; */ 
+       /*the margin top pushes the logo down by 10 pixels*/
+     }
+#container {
+	width:100%;
+	margin:0;
+	padding:0;
 	list-style: none;
+	display: flex;
+	background-color: brown;
+	font-size: 20px;
+	overflow:hidden;
+
 }
-li{
-	float:right;
+#container .items {
+	display:flex;
+	align-content: space-around;
+	padding-top: 45px;
+	padding-right: 25px;
 }
-li a{
-	width: 100px;
-	display: block;
-	padding: 20px 15px;
+.items a {
+	color: azure;
 	text-decoration: none;
-	color: white;
-	text-align:center;
+
+}
+.items a:hover {
+	color: yellow;
+}
+#titlePage{
+	margin-top : 3%;
+	width:100%;
+	object-fit:scale-down;
+}
+#latest{
+	display:flex;
+	align-content: center;
+
+	
+
+}
+#latest div{
+	width:20%;
+	margin-left:15%;
+	display:flex;
+}
+#latest img{
+	width:50%;
+	object-fit:cover;
 }
