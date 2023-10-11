@@ -3,6 +3,8 @@ body{
 	padding: 0;
 	background-color:powderblue;
 	background-image: url("images/NintendoBackground.jpg");
+	background-repeat: repeat;
+	background-size:50%;
 }
 
 div{
@@ -10,56 +12,38 @@ div{
 }
  .logo {
        margin-right: 10%;
-       /* margin-top: 10px; */ 
-       /*the margin top pushes the logo down by 10 pixels*/
-     }
+ }
 #container {
 	width:100%;
 	margin:0;
 	padding:0;
 	list-style: none;
 	display: flex;
-	background-color: brown;
+	background-color: azure;
 	font-size: 20px;
 	overflow:hidden;
 
 }
 #container .items {
 	display:flex;
-	align-content: space-around;
+	margin-left:50px;
 	padding-top: 45px;
 	padding-right: 25px;
 }
 .items a {
-	color: azure;
+	color: black;
 	text-decoration: none;
 
 }
 .items a:hover {
-	color: yellow;
+	color: red;
 }
-#titlePage{
-	margin-top : 3%;
+#Title{
 	width:100%;
-	object-fit:scale-down;
-}
-#latest{
 	display:flex;
-	align-content: center;
-	justify-content: center;
-	gap:5%;
-
-	
-
+	justify-content:space-around;
 }
-#latest div{
-	width:20%;
-	display:flex;
-	flex-direction: column;
-}
-#latest img{
-	width:100%;
-	height:300px;
-	left:50%;
-	object-fit:cover;
+#Title img{
+	max-width: 25%;
+	height:200px;
 }
