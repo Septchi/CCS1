@@ -41,7 +41,6 @@ div{
 #titlePage{
 	margin-top : 3%;
 	width:100%;
-	object-fit:scale-down;
 }
 #latest{
 	display:flex;
