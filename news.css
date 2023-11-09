@@ -42,6 +42,8 @@ div{
 	width:100%;
 	display:flex;
 	justify-content:space-around;
+	background-image: url("images/NewsTitleBackground.png");
+	background-size:90% auto;
 }
 #Title img{
 	max-width: 25%;
