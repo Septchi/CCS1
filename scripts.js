@@ -1,4 +1,6 @@
-let latest = document.getElementById("latest");
+const latest = document.getElementById("latest");
+const navbar = document.getElementById("container");
+
 const colors = ["powderblue", "salmon", "palevioletred"];
 fetch("./latest.json").then(res=>res.json()).then(data=> {
   for(let [i, entry] of data.entry.entries()){
@@ -43,13 +45,17 @@ latest.addEventListener("wheel", function (evt){
 	latest.scrollLeft += evt.deltaY/2;
 	evt.preventDefault();
 });
-console.log(latest.childNodes);
-const children = latest.childNodes;
-console.log("hello");
-for (let item of children){
-  console.log("hello");
-	item.addEventListener("click", function(evt){
-    let element = evt.target.tagName == 'DIV'  ? evt.target : evt.target.parentNode;
-    element.querySelector("p").style.display = window.getComputedStyle(element.querySelector("p")).display == 'none' ? "block" : "none";
-	});
-}
+
+navbar.addEventListener("wheel", function (evt){
+	navbar.scrollLeft += evt.deltaY/2;
+	evt.preventDefault();
+});
+
+// const children = latest.childNodes;
+// for (let item of children){
+//   console.log("hello");
+// 	item.addEventListener("click", function(evt){
+//     let element = evt.target.tagName == 'DIV'  ? evt.target : evt.target.parentNode;
+//     element.querySelector("p").style.display = window.getComputedStyle(element.querySelector("p")).display == 'none' ? "block" : "none";
+// 	});
+// }
