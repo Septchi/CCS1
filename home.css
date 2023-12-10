@@ -62,9 +62,9 @@ div{
 
 #latest div{
 	min-width:30%;
-	min-height:0%;
+	min-height:30%;
   width: auto;
-	height: 30%;
+	height:100%;
 	padding: 3%;
 	/* border-radius: 10px; */
 	display:flex;
