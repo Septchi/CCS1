@@ -1,5 +1,6 @@
 const normal = document.getElementById("normal");
 
+// makes the entries for the news using values in the json file.
 fetch("./news.json").then(res=>res.json()).then(data=> {
   for(let [i, entry] of data.entry.entries()){
     let div = document.createElement("div");
@@ -26,6 +27,7 @@ fetch("./news.json").then(res=>res.json()).then(data=> {
   }
 });
 
+// makes navbar scrollable
 const navbar = document.getElementById("container");
 navbar.addEventListener("wheel", function (evt){
 	navbar.scrollLeft += evt.deltaY/2;
