@@ -25,3 +25,9 @@ fetch("./news.json").then(res=>res.json()).then(data=> {
     
   }
 });
+
+const navbar = document.getElementById("container");
+navbar.addEventListener("wheel", function (evt){
+	navbar.scrollLeft += evt.deltaY/2;
+	evt.preventDefault();
+});
