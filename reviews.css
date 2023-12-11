@@ -63,7 +63,9 @@ div{
 }
 #reviews .body{
   width:30vw;
-  height:50vh;
+  height:auto;
+  margin: 3vw;
+  padding: 0px 2vw;
   background-color:grey;
   display:grid;
   grid-template-areas:
