@@ -2,7 +2,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-image: url("images/NintendoBackground.jpg");
+	background-image: url("images/newImage/NewsandReviewsBackground.png");
 	background-repeat: repeat;
 	background-size:50%;
 }
@@ -40,39 +40,60 @@ div{
 }
 #Title{
 	width:100%;
+  height:100vh;
 	display:flex;
 	justify-content:space-around;
-	background-image: url("images/ReviewsTitleBackground.png");
-	background-size:90% auto;
+	background-image: url("images/newImage/ReviewsTitle.png");
+  background-repeat:no-repeat;
+	background-size:100% auto;
 }
 #Title img{
 	max-width: 25%;
 	height:200px;
 }
-.news div{
-	margin-left: 5%;
-	margin-top:2%;
-	width:85%;
-	display:grid;
-	grid-template-columns: auto auto;
-	column-gap:30px;
-	padding:3%;
-	border-radius:5%;
+
+#reviews{
+  width:100%;
+  height:auto;
+  padding:3%;
+  display:grid;
+  background-color:green;
+  grid-template-columns: auto auto;
+  justify-content:space-around;
 }
-.news h1{
-	font-family:'HISKYFLIPPERHIBOLD', sans-serif;
+#reviews .body{
+  width:30vw;
+  height:50vh;
+  background-color:grey;
+  display:grid;
+  grid-template-areas:
+  'user name date'
+  'user rating rating'
+  'text text text'
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-rows: auto auto; */
 }
-.news img{
-	width:100%;
-	height:250px;
-	border-radius:10%;
+#reviews .body #user{
+  height:15vh;
+  width:auto;
+  grid-area: user;
 }
-.news hr{
-	border-top:10px solid black;
-	margin: auto 5%;
-} 
-.news p{
-	font-size:22px;
+
+#reviews .body #rating{
+  height:3vh;
+  width:auto;
+  grid-area: rating;
+}
+
+#reviews .body h3{
+  padding-right:2vw;
+  grid-area: name;
+}
+#reviews .body h5{
+  grid-area: date;
+}
+#reviews .body p{
+  grid-area: text;
 }
 
 #bottom{
