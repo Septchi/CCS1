@@ -84,13 +84,18 @@ div{
   flex:1;
   /* background-color:blue; */
 }
+#normal div{
+  margin:3vh auto;
+}
 #normal .body{
   display:flex;
 } 
 #normal .body img{
-  width:30%;
+  height:30vh;
+  width: auto;
 }
 #normal .body .text{
+  padding: 2vw;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
