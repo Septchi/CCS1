@@ -7,7 +7,7 @@ fetch("./reviews.json").then(res=>res.json()).then(data=> {
     user.src = "images/newImage/ReviewerImage.png";
     user.id = "user";
     let rating = document.createElement("img");
-    rating.src = "images/Star.png";
+    rating.src = entry.rating;
     rating.id = "rating";
     let h3 = document.createElement("h3");
     h3.innerHTML = entry.name;
