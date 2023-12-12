@@ -1,5 +1,6 @@
 const normal = document.getElementById("reviews");
 
+//makes div entries for the reviews using the values in the json file.
 fetch("./reviews.json").then(res=>res.json()).then(data=> {
   for(let [i, entry] of data.entry.entries()){
     let div = document.createElement("div");
@@ -24,4 +25,11 @@ fetch("./reviews.json").then(res=>res.json()).then(data=> {
     normal.appendChild(div);
 
   }
+});
+
+//makes navbar scrollable
+const navbar = document.getElementById("container");
+navbar.addEventListener("wheel", function (evt){
+	navbar.scrollLeft += evt.deltaY/2;
+	evt.preventDefault();
 });
