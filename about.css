@@ -1,20 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/amiga-forever');
+<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
 body{
 	margin: 0;
 	padding: 0;
-	background-color: dimgray;
+	background-size: cover;
 }
 
-div{
-	width:100%;
-}
-p, h3{
-	font-family: "Verdana", sans-serif;
-	margin:5%;
-	font-size:22px;
-	font-weight:500;
-	color:white;
-}
 hr{
 	border:none;
 	height: 5px;
@@ -49,11 +39,6 @@ hr{
 .items a:hover {
 	color: red;
 }
-h1{
-	margin:5%;
-	font-family: 'Amiga Forever', sans-serif;
-	color:gold;
-}
 .title{
 	display:flex;
 	max-height:10%;
@@ -85,3 +70,23 @@ h1{
 	padding-top: 35px;
 	margin-right:15px;
 }
+
+
+.NAME {
+		font-family: 'Cabin Sketch';font-size: 100px;
+		text-align: center;
+		margin:0px;
+		padding:0px;}
+.textdesc {
+		font-family: 'Cabin Sketch';font-size: 30px;
+		text-align: center;
+		margin:5px;
+		padding:0px;}
+#CONTAINER2 {
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom:100px;}
+#left {
+		margin-left:100px;}
+#right {
+		margin-right:100px;}
