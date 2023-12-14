@@ -1,23 +1,17 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Nintendo Alert</title>
 		<link rel="stylesheet" type="text/css" href="about.css">
-		<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
-	<body background="images/bg4.jpg"> 
-		<div>
-			<ul id="container">
-				<img src="images/TeamLogo_Name.png" class="logo">
-				<li class="items"><a href="index.html"> HOME </a></li>
-				<li class="items"><a href="news.html"> NEWS </a></li>
-				<li class="items"><a href="reviews.html"> REVIEWS </a></li>
-				<li class="items"><a href="about.html"> ABOUT </a> </li>
-			</ul>
-		</div>
-<center><h1 class="NAME">MEET THE NEWSHOUNDS!</h1></center>
-<center><div>
+	<body> 
+    <?php
+      include_once 'navbar.php';
+    ?>
+
+  <center><h1 class="NAME">MEET THE NEWSHOUNDS!</h1></center>
+  <center><div>
 	<div id="CONTAINER2">
 		<img src="images/draftcarlospola.png" height="500px" width="500px">
 	</div><div id="CONTAINER2">

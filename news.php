@@ -3,24 +3,20 @@
 	<head>
 		<title>Nintendo Alert</title>
 		<link rel="stylesheet" type="text/css" href="news.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
-	<body>
-		<div>
-			<ul id="container">
-				<img src="images/TeamLogo_Name.png" class="logo">
-				<li class="items"><a href="index.html"> HOME </a></li>
-				<li class="items"><a href="news.html"> NEWS </a></li>
-				<li class="items"><a href="reviews.html"> REVIEWS </a></li>
-				<li class="items"><a href="about.html"> ABOUT </a> </li>
-			</ul>
-		</div>
+	<body> 
+    <?php
+      include_once 'navbar.php';
+    ?>
 		<div id="Title">
 			<!-- <img src="images/Star.png"> -->
 			<!-- <img src="images/News Title Design.png" style="flex-grow: 2;"> -->
 			<!-- <img src="images/Star.png"> -->
 		</div>
 
-    <iframe src="https://www.youtube.com/watch?v=Zu2z5M4gmno"  width="70%" height="500vh"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zu2z5M4gmno?si=K7nJy7beMMcHay4j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
 
     <div id="news">
       <div id="main">

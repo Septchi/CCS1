@@ -3,17 +3,12 @@
 	<head>
 		<title>Nintendo Alert</title>
 		<link rel="stylesheet" type="text/css" href="reviews.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
-	<body>
-		<div>
-			<ul id="container">
-				<img src="images/TeamLogo_Name.png" class="logo">
-				<li class="items"><a href="index.html"> HOME </a></li>
-				<li class="items"><a href="news.html"> NEWS </a></li>
-				<li class="items"><a href="reviews.html"> REVIEWS </a></li>
-				<li class="items"><a href="about.html"> ABOUT </a> </li>
-			</ul>
-		</div>
+	<body> 
+    <?php
+      include_once "navbar.php";
+    ?>
 		<div id="Title">
 		</div>
     <div id="reviews">

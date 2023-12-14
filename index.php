@@ -6,17 +6,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
 	<body> 
-		<div id="navbar">
-			<ul id="container">
-				<img src="images/TeamLogo_Name.png" class="logo">
-				<li class="items"><a href="index.html"> HOME </a></li>
-				<li class="items"><a href="news.html"> NEWS </a></li>
-				<li class="items"><a href="reviews.html"> REVIEWS </a></li>
-				<li class="items"><a href="about.html"> ABOUT </a> </li>
-			</ul>
-		</div>
-			<img id="titlePage" src="images/Title Design Page.png">
-			<h1 style="text-align: center; margin-top: 5%;">Check out the latest news or reviews right now!</h1>
+    <?php
+      include_once 'navbar.php';
+    ?>
+    <img id="titlePage" src="images/Title Design Page.png">
+    <h1 style="text-align: center; margin-top: 5%;">Check out the latest news or reviews right now!</h1>
 		<div id="latest"></div>
 		
 		<div id="bottom">
