@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>Nintendo Alert</title>
+		<link rel="stylesheet" type="text/css" href="reviews.css">
 		<link rel="stylesheet" type="text/css" href="home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
 	<body> 
     <?php
-      include_once 'navbar.php';
+      include_once 'header.php';
     ?>
     <img id="titlePage" src="images/Title Design Page.png">
     <h1 style="text-align: center; margin-top: 5%;">Check out the latest news or reviews right now!</h1>
